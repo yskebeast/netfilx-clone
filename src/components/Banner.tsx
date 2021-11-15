@@ -1,9 +1,7 @@
-import { useEffect, useState, VFC } from "react";
+import { useEffect, useState } from "react";
 import { Axios } from "../Axios";
 import { requests } from "../requests";
 import "../styles/Banner.css";
-
-type Props = {};
 
 type Movie = {
   backdrop_path?: any;
@@ -14,7 +12,7 @@ type Movie = {
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
-export const Banner: VFC<Props> = (props) => {
+export const Banner = () => {
   const [movie, setMovie] = useState<Movie>();
 
   useEffect(() => {
