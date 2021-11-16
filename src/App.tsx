@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styles/App.css";
 import { Banner } from "./components/Banner";
 import { Nav } from "./components/Nav";
 import { Row } from "./components/Row";
